@@ -5,7 +5,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <!-- <link rel="stylesheet" href="<?=base_url()?>bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="<?=base_url()?>bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?=base_url()?>bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
@@ -24,14 +24,11 @@
   <link rel="stylesheet" href="<?=base_url()?>css/toastr.css">
   <link rel="stylesheet" href="<?=base_url()?>css/main.css">
 
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
+  <!-- Summernote -->
 
-     <!-- Summernote -->
-
-     <!-- <link rel="stylesheet" href="<?=base_url()?>css/summernote-lite.css"> -->
-     <!-- <link rel="stylesheet" href="<?=base_url()?>css/summernote-bs4.css"> -->
-
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+  <link rel="stylesheet" href="<?=base_url()?>css/summernote-lite.min.css">
   <link rel="stylesheet" href="<?=base_url()?>css/bootstrap-tagsinput.css">
 
 
