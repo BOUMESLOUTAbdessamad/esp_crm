@@ -4,7 +4,7 @@
    <body class="hold-transition login-page">
       <div class="login-box">
          <div class="login-logo">
-            <a href="<?=base_url()?>"><b>ESP</b>Finder</a>
+            <a href="<?=base_url()?>"><b>U</b>Research</a>
          </div>
          <?php
             foreach($errors as $error):?>

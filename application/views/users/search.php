@@ -71,7 +71,6 @@
                                  <?php if($_SESSION['user']['id'] != $user['id'] ) : ?>
                                  <a class="btn" onclick='confirm("Are you sure ?")' href="<?=base_url()?>users/remove/<?=$user['id']?>" id="remove"><i class="fa fa-remove"></i></a>
                                  <?php endif ?>
-
                                  </td>
                               </tr>
                               <?php endforeach?>
