@@ -44,10 +44,6 @@ class Projects extends CI_Controller {
 			$errors[] = "Project description can't be empty.";
         }
 
-        if(!isset($pProject['keywords']) || $pProject['keywords'] == '' || $pProject['keywords'] == null) {
-			$errors[] = "Please add at least 1 keyword";
-        }
-
         if(!isset($pProject['degree']) || $pProject['degree'] == '' || $pProject['degree'] == null) {
 			$errors[] = "Please select a degree";
         }

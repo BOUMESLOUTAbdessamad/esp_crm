@@ -25,6 +25,7 @@ class Welcome extends CI_Controller {
 										->limit(6)
 										->order_by('users.id', 'DESC')
 										->get()->result_array();
+		$data['projects_count'] = $this->db->count_all_results('projects');
 
 		$this->load->view('home', $data);
 
