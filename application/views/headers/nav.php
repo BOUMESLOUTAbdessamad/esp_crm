@@ -48,7 +48,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="<?=active_menu("users","search")?>"><a href="<?=base_url()?>users/search"><i class="fa fa-circle-o"></i>List</a></li>
-                    <li class="<?=active_menu("users","edit")?>"><a href="<?=base_url()?>users/edit"><i class="fa fa-circle-o"></i> Add New</a></li>
+                    <li class="<?=active_menu("users","edit")?>"><a href="<?=base_url()?>users/edit"><i class="fa fa-circle-o"></i>Add New</a></li>
                 </ul>
             </li>
             <li class="treeview menu <?=active_menu("users")?>">
@@ -59,12 +59,12 @@
                 </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="<?=active_menu("projects","search")?>"><a href="<?=base_url()?>projects/search"><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> Projects
+                    <li class="<?=active_menu("projects","search")?>"><a href="<?=base_url()?>projects/search"><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>Projects
                     <span v-if=" projectsCount > 0 " class="pull-right badge bg-blue">{{projectsCount}}</span></a></li>
                 </a></li>
                 </ul>
             </li>
-
+<!-- 
             <li class="treeview menu <?=active_menu("posts")?>">
                 <a href="#">
                     <i class="fa fa-clipboard"></i> <span>News</span>
@@ -76,7 +76,7 @@
                     <li class="<?=active_menu("posts","search")?>"><a href="<?=base_url()?>posts/search"><i class="fa fa-circle-o"></i>List</a></li>
                     <li class="<?=active_menu("posts","edit")?>"><a href="<?=base_url()?>posts/edit"><i class="fa fa-circle-o"></i>Add New</a></li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
     </section>
     <!-- /.sidebar -->

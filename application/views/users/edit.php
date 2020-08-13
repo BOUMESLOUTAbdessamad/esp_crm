@@ -63,8 +63,8 @@
                               <div class="form-group col-md-4">
                                  <label>Role</label>
                                  <select class="form-control" name="user[role]" id="role">
-                                       <option value="user">User</option>
-                                       <option value="admin">Admin</option>
+                                       <option <?=($_POST['user']['role'] == 'user' ? 'selected' : null )?> value="user">User</option>
+                                       <option <?=($_POST['user']['role'] == 'admin' ? 'selected' : null )?> value="admin">Admin</option>
                                  </select>
                               </div>
                            </div>

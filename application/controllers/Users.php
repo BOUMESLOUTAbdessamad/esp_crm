@@ -99,6 +99,7 @@ class Users extends CI_Controller {
                 "lastname"         => $pUser['lastname'],
                 "password"         => n_crypt($pUser['password']),
                 "domain"           => $_SERVER['HTTP_HOST'],
+                'role'             => $pUser['role'],
                 "email_activation" => uniqid("CHIP".(int) time() % 3),
                 "sms_activation"   => rand(11111,99999),
                 "status"           => "active",
