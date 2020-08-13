@@ -52,6 +52,10 @@ class Projects extends CI_Controller {
 			$errors[] = "Author can't be empty.";
         }
 
+        if(!isset($pProject['author_email']) || $pProject['author_email'] == '' || $pProject['author_email'] == null) {
+			$errors[] = "Author Email can't be empty.";
+        }
+
         if(!$errors) {
             $project = [
                 'user' => $_SESSION['user']['id'],
@@ -60,7 +64,8 @@ class Projects extends CI_Controller {
                 'content' => ($pProject['content'] ?? null ),
                 'author' => $pProject['author'],
                 'keywords' => ($pProject['keywords'] ?? null ),
-                'degree' => $pProject['degree']
+                'degree' => $pProject['degree'],
+                'author_email' => $pProject['author_email']
 
             ];
 

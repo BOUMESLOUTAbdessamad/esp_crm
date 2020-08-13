@@ -54,6 +54,12 @@
                             <input v-model="selected.author" name="author" type="text" class="form-control">
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="">Author Email</label>
+                            <input v-model="selected.author_email" name="author_email" type="text" class="form-control">
+                        </div>
+                    </div>
                     <!-- <div class="row">
                         <div class="form-group col-md-12">
                             <label for="">Attachements :</label> <br>

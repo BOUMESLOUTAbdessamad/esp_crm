@@ -51,6 +51,7 @@
                                  <!-- <th>Type</th> -->
                                  <th>Full name</th>
                                  <th scope="col">Email</th>
+                                 <th scope="col">Role</th>
                                  <th scope="col">Created</th>
                                  <th scope="col">Updated</th>
                                  <th scope="col">Options</th>
@@ -61,11 +62,16 @@
                                  <!-- <td></td> -->
                                  <td><?=$user['firstname'].' '.$user['lastname']?></td>
                                  <td><?=$user['email']?></td>
+                                 <td><?=ucfirst($user['role'])?></td>
                                  <td><?=$user['created_at']?></td>
                                  <td><?=$user['updated_at']?></td>
                                  <td>
-                                    <a class="btn" onclick='confirm_remove()' href="<?=base_url()?>users/remove/<?=$user['id']?>" id="remove"><i class="fa fa-remove"></i></a>
-                                    <a class="btn" href="<?=base_url()?>users/edit/<?=$user['id']?>" id="edit"><i class="fa fa-edit"></i></a>
+                                 <a class="btn" href="<?=base_url()?>users/edit/<?=$user['id']?>" id="edit"><i class="fa fa-edit"></i></a>
+
+                                 <?php if($_SESSION['user']['id'] != $user['id'] ) : ?>
+                                 <a class="btn" onclick='confirm("Are you sure ?")' href="<?=base_url()?>users/remove/<?=$user['id']?>" id="remove"><i class="fa fa-remove"></i></a>
+                                 <?php endif ?>
+
                                  </td>
                               </tr>
                               <?php endforeach?>
