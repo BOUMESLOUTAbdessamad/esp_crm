@@ -107,9 +107,7 @@
             </div>
             <!-- /.content-wrapper -->
             <?=view_loader("footers/footer.php",[],true)?>
-            <!-- /.control-sidebar -->
-            <!-- Add the sidebar's background. This div must be placed
-                immediately after the control sidebar -->
+
             <div class="control-sidebar-bg"></div>
         </div>
         <!-- ./wrapper -->
@@ -136,11 +134,11 @@
 
 				methods : {
 				setPage : function(page) {
-							if(!page) {
-									return;
-							}
-							app.pages.current = page;
-							app.feed();
+						if(!page) {
+							return;
+						}
+						app.pages.current = page;
+						app.feed();
 					},
 					feed : function(event, callback) {
 
@@ -154,13 +152,10 @@
 
 						$.get(BASE_URL + "projects/feed/", {
 							page : app.pages.current,
-							// model : this.model
 
 						},function(r) {
 							app.loading = false;
 							app.projects = r.data.projects;
-                            console.log(app.projects);
-							// editor.marks = r.data.marks;
 							app.pages = r.data.pages;
 							if(callback) {
 								callback.apply(r.data.projects,[r.data.projects]);
@@ -172,7 +167,6 @@
 								editor.error = null;
                                 editor.photos = [];
                                 $('#keywords').tagsinput('removeAll');
-								// $('#models').append(new Option('', '', true, true)).trigger('change');
 							})
 
 
@@ -200,11 +194,7 @@
 							$('#projectEdit').off("shown.bs.modal");
 								editor.selected = r.data.project;
                                 $('#keywords').tagsinput('add', editor.selected.keywords);
-                                $('#content').summernote('code',editor.selected.content);
-
-								// r.data.photos.forEach(photo => {
-								// 	editor.photos.push(photo);
-								// });
+                                $('#content').summernote('code', editor.selected.content);
 						})
                     },
                     set_status : function(project) {
@@ -263,11 +253,8 @@
 						editor.error = null;
 						editor.photos = [];
                         $('#keywords').tagsinput('removeAll');
+						$('#content').summernote('code', null);
 					},
-
-					// remove : function (photo) {
-					// 	editor.photos.splice(editor.photos.indexOf(photo), editor.photos.indexOf(photo) + 1 )
-					// }
 				}
 		});
 
