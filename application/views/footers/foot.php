@@ -27,8 +27,8 @@
 <script src="<?=base_url()?>js/toastr.js"></script>
 
 <!-- Summernote -->
-<script src="<?=base_url()?>js/summernote.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script> -->
+<!-- <script src="<?=base_url()?>js/summernote.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
 
 <script src="<?=base_url()?>js/bootstrap-tagsinput.min.js"></script>
 

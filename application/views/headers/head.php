@@ -29,8 +29,8 @@
 
   <!-- Summernote -->
 
-     <!-- <link rel="stylesheet" href="<?=base_url()?>css/summernote-lite.css">
-     <link rel="stylesheet" href="<?=base_url()?>css/summernote-bs4.css"> -->
+     <!-- <link rel="stylesheet" href="<?=base_url()?>css/summernote-lite.css"> -->
+     <!-- <link rel="stylesheet" href="<?=base_url()?>css/summernote-bs4.css"> -->
 
   <link rel="stylesheet" href="<?=base_url()?>css/bootstrap-tagsinput.css">
 
